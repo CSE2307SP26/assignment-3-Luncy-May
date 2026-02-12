@@ -5,7 +5,7 @@ echo "EXPECTED OUTPUT: $EXPECTOUTPUT"
 echo "OUTPUT: $OUTPUT"
 while read STUDENTNAME
 do 
-    # $(git clone https://github.com/CSE2307SP26/$STUDENTNAME.git)
+    $(git clone https://github.com/CSE2307SP26/$STUDENTNAME.git)
     cd "$STUDENTNAME"
     echo $(pwd)
     git checkout cipher
